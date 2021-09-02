@@ -1,3 +1,5 @@
+Detailed Description:
+  5MineIt is a computer game prototype available for Mac OS X (or newer) and Windows that was created for a game development course as a 2 week endeavour from a small development team. The gameplay has the main character mining towards a large treasure room whilst upgrading their arsenal with the valuables they acquire along the way. We offer a variety of weapons and arsenal to upgrade in the shop. One big level (hence the prototype name) that has hours of exploration that can be done with different arsenal configurations. Don't get too comfortable though because your expedition is of limited time be wary of the time limit.
 
 Aims:
   - Design an application layer network protocol
