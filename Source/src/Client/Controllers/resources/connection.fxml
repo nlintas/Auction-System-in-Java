@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="1128.0" style="-fx-background-color: #1d1d1d;" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controllers.ConnectionController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="1128.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text fx:id="title" fill="WHITE" layoutX="395.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="337.685546875">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Button  layoutX="426.0" layoutY="208.0" mnemonicParsing="false" onAction="#connectToServer" prefHeight="111.0" prefWidth="258.0" text="Connect to Server" />
+      <ImageView fitHeight="291.0" fitWidth="398.0" layoutX="382.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@server.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

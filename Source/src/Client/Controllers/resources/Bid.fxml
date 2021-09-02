@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="1128.0" style="-fx-background-color: #1d1d1d;" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controllers.BidController">
+   <children>
+     <MenuBar layoutY="-3.0" prefHeight="25.0" prefWidth="1128.0">
+       <menus>
+         <Menu mnemonicParsing="false" text="Info">
+           <!--               <items>-->
+           <!--                  <MenuItem mnemonicParsing="false" text="Close" />-->
+           <!--               </items>-->
+         </Menu>
+         <Menu mnemonicParsing="false" text="Help">
+           <items>
+             <MenuItem mnemonicParsing="false" text="Delete" />
+           </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Server">
+           <items>
+             <MenuItem fx:id="disconnect" onAction="#disconnect" text="Dissconnect" />
+           </items>
+         </Menu>
+       </menus>
+     </MenuBar>
+      <Text fx:id="title" fill="WHITE" layoutX="379.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" wrappingWidth="337.685546875">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text fx:id="invalidInput" fill="RED" layoutX="473.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid Input" visible="false" wrappingWidth="131.15625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="222.0" fitWidth="163.0" layoutX="447.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" rotate="-11.3">
+         <image>
+            <Image url="@426857_fafddb4260e64666ba2d330a1fa288e5.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="auctionId" fill="#cd716e" layoutX="284.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="94.763671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#e8e8e8" layoutX="481.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bid Price" wrappingWidth="94.763671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+
+      <Button fx:id="submit" layoutX="485.0" layoutY="581.0" mnemonicParsing="false" onAction="#validate" text="Make Bid" />
+      <TextField fx:id="textField" layoutX="415.0" layoutY="506.0" />
+
+     <Button fx:id="back" layoutX="11.0" layoutY="45.0" mnemonicParsing="false" onAction="#back" prefHeight="28.0" prefWidth="66.0" style="-fx-opacity: .7;" text="&lt;- Back" />
+      <Button fx:id="cancel" layoutX="1063.0" layoutY="45.0" mnemonicParsing="false" style="-fx-background-color: RED;" text="Delete" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <ImageView fitHeight="115.0" fitWidth="34.0" layoutX="992.0" layoutY="272.0" onKeyPressed="#refresh" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@refresh-pngrepo-com.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="983.0" layoutY="277.0" mnemonicParsing="false" onAction="#refresh" opacity="0.0" text="Button" />
+      <Button fx:id="unRegister" layoutX="24.0" layoutY="648.0" mnemonicParsing="false" onAction="#unRegister" prefHeight="29.0" prefWidth="79.0" style="-fx-background-color: LIGHTBLUE;" text="UnRegister" />
+      <TextArea fx:id="console" layoutX="752.0" layoutY="611.0" prefHeight="103.0" prefWidth="382.0" />
+      <Label layoutX="896.0" layoutY="583.0" text="Notifications" />
+      <TableView fx:id="tableView" layoutX="149.0" layoutY="247.0" prefHeight="213.0" prefWidth="759.0">
+         <columns>
+            <TableColumn fx:id="auction" prefWidth="115.0" text="Auction" />
+            <TableColumn fx:id="itemName" prefWidth="151.0" text="Item name" />
+            <TableColumn fx:id="description" prefWidth="154.0" text="Description" />
+            <TableColumn fx:id="price" prefWidth="79.0" text="Price" />
+            <TableColumn fx:id="highestBid" prefWidth="159.0" text="Highest Bid" />
+            <TableColumn fx:id="owner" prefWidth="99.0" text="Owner" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

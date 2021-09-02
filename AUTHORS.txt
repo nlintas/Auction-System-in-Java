@@ -1,0 +1,17 @@
+Development Time: 2 weeks.
+University of Sheffield Project from:
+
+Nikolaos Lintas - https://www.linkedin.com/in/nikos-li-computer-science-971130209/ - https://github.com/nlintas
+    - Back-End Developer
+    - Quality Assurance
+    - UI/UX Testing
+    - Project Manager
+
+Phillip Kalatzis - https://www.linkedin.com/in/phillipos-andrianos-k-968454119/
+    - Back-End Developer
+
+Memli Restelica - https://www.linkedin.com/in/memli-restelica-556075159/
+    - Full-Stack Developer
+
+Donat Salihu - https://www.linkedin.com/in/donat-s-5769b3102/
+    - Back End Developer
