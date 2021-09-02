@@ -1,3 +1,5 @@
+Detailed Description:
+  Auction system with a client - server design allowing for multiple clients to host or be part of auctions. Uses a simple GUI using JavaFX. Custom network protocol is used but traditional transport layer protocols. Possesses a high degree of error control. Supports a lot of clients.
 
 Aims:
   - Design an application layer network protocol
